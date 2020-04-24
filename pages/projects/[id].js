@@ -11,11 +11,11 @@ export default function Project({ projectData }) {
         <title>{projectData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingX1}>{projectData.title}</h1>
+        <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={projectData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+        <div className={utilStyles.articleBody} dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
       </article>
     </Layout>
   );

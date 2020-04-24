@@ -37,6 +37,12 @@
   padding-top: 1px;
 }
 
+.articleBody img {
+  float: right;
+  margin: 0 0 2rem 2rem;
+  max-width: 33%;
+}
+
 .list {
   list-style: none;
   padding: 0;
