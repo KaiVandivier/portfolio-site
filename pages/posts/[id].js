@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllMdIds, getMdData } from "../../lib/markdown";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
@@ -11,7 +11,7 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingX1}>{postData.title}</h1>
+        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
@@ -22,7 +22,7 @@ export default function Post({ postData }) {
 }
 
 export function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllMdIds("posts");
   return {
     paths,
     fallback: false,
@@ -30,7 +30,7 @@ export function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getMdData(params.id, "posts");
   return {
     props: {
       postData,
