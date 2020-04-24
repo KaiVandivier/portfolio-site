@@ -5,19 +5,31 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedMdData } from "../lib/markdown";
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, allProjectsData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>An aspiring developer</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p>A front-end developer. Enthusiastic about React, Javascript, GraphQL, and making sites run fast!</p>
       </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Projects</h2>
+        <ul className={utilStyles.list}>
+          {allProjectsData.map(({ id, title, description }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href="projects/[id]" as={`/projects/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                {description}
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>      
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
@@ -40,9 +52,11 @@ export default function Home({ allPostsData }) {
 
 export async function getStaticProps() {
   const allPostsData = getSortedMdData("posts");
+  const allProjectsData = getSortedMdData("projects");
   return {
     props: {
       allPostsData,
+      allProjectsData,
     },
   };
 }
