@@ -2,7 +2,7 @@
 title: 'Recipe Market'
 date: '2020-04-01'
 image: '/images/profile.jpg/'
-description: 'TODO'
+description: 'An e-commerce site using Next.js, React, Apollo, and a GraphQL server.'
 ---
 
 **Recipe Market** is a website where you can shop for groceries organized into recipes.  Find a recipe you like, then you can add all the ingredients to your cart!
