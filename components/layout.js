@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Kai Vandivier'
+const email = "kpvandivier@gmail.com"
 export const siteTitle = 'Kai Vandivier'
 
 export default function Layout({ children, home }) {
@@ -13,14 +14,14 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Kai Vandivier personal website"
         />
-        <meta
+        {/* <meta // TODO: Add an image
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
             siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        /> */}
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -32,7 +33,8 @@ export default function Layout({ children, home }) {
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={styles.headerHomeTitle}>{name}</h1>
+            <a href={`mailto:${email}`} className={utilStyles.lightText}>{email}</a>
           </>
         ) : (
           <>
