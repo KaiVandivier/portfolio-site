@@ -1,21 +1,35 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Kai Vandivier'
-const email = "kpvandivier@gmail.com"
-export const siteTitle = 'Kai Vandivier'
+const name = "Kai Vandivier";
+const email = "kpvandivier@gmail.com";
+export const siteTitle = "Kai Vandivier";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Kai Vandivier personal website"
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="description" content="Kai Vandivier portfolio" />
         {/* <meta // TODO: Add an image
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -34,7 +48,9 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={styles.headerHomeTitle}>{name}</h1>
-            <a href={`mailto:${email}`} className={utilStyles.lightText}>{email}</a>
+            <a href={`mailto:${email}`} className={utilStyles.lightText}>
+              {email}
+            </a>
           </>
         ) : (
           <>
@@ -64,5 +80,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
