@@ -1,7 +1,7 @@
 ---
 title: 'Recipe Market'
 date: '2020-04-01'
-image: '/images/avocado.jpg/'
+image: '/images/avocado.jpg'
 description: 'An e-commerce site using Next.js, React, Apollo, and a GraphQL server.'
 ---
 

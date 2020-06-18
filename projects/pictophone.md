@@ -1,7 +1,7 @@
 ---
 title: 'Pictophone'
 date: '2020-05-01'
-# image: '/images/avocado.jpg/'
+# image: '/images/avocado.jpg'
 description: 'A multiplayer drawing game!'
 ---
 
