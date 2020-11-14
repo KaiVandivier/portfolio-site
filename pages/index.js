@@ -12,7 +12,7 @@ export default function Home({ allPostsData, allProjectsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>A front-end developer. Enthusiastic about React, Javascript, GraphQL, and solving puzzles!</p>
+        <p>A front-end developer. Enthusiastic about React, Javascript, GraphQL, and the DHIS ecosystem!</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
