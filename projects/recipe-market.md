@@ -1,11 +1,20 @@
 ---
 title: 'Recipe Market'
 date: '2020-04-01'
-image: '/images/avocado.jpg'
+images:
+  [
+    '/images/recipe-market/rm-items.png',
+    '/images/recipe-market/rm-sign-in.png',
+    '/images/recipe-market/rm-create-recipe-search.png',
+    '/images/recipe-market/rm-create-recipe.png',
+    '/images/recipe-market/rm-complete-recipe.png',
+    '/images/recipe-market/rm-recipes-and-cart.png',
+    '/images/recipe-market/rm-checkout.png',
+    '/images/recipe-market/rm-checkout-success.png',
+    '/images/recipe-market/rm-orders.png',
+  ]
 description: 'An e-commerce site using Next.js, React, Apollo, and a GraphQL server.'
 ---
-
-![Recipe Market](/images/avocado.jpg)
 
 **Recipe Market** is a website where you can shop for groceries organized into recipes.  Find a recipe you like, then you can add all the ingredients to your cart!
 
