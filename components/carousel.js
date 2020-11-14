@@ -1,5 +1,8 @@
 import React from "react";
 
+// TODO: Include 'alt' message in projectData
+// TODO: Open images in lightroom
+
 export function Carousel({ images }) {
   function getCarouselIndicators() {
     return images.map((src, idx) => (
@@ -16,12 +19,7 @@ export function Carousel({ images }) {
     return images.map((src, idx) => (
       <div key={src} className={`carousel-item ${idx === 0 ? "active" : ""}`}>
         <a href={src}>
-          <img
-            className="d-block w-100"
-            src={src}
-            // TODO: Include 'alt' message in projectData
-            alt={`Screenshot ${idx}`}
-          />
+          <img className="d-block w-100" src={src} alt={`Screenshot ${idx}`} />
         </a>
       </div>
     ));
