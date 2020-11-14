@@ -1,13 +1,21 @@
 ---
 title: 'Pictophone'
 date: '2020-05-01'
-image: '/images/pictophone-screenshot.jpg'
+images: 
+  [
+    '/images/pictophone/pt-home.png',
+    '/images/pictophone/pt-lobby.png',
+    '/images/pictophone/pt-choose-word.png',
+    '/images/pictophone/pt-draw-ready.png',
+    '/images/pictophone/pt-draw.png',
+    '/images/pictophone/pt-guess-ready.png',
+    '/images/pictophone/pt-guess.png',
+    '/images/pictophone/pt-replay.png',
+  ]
 description: 'A multiplayer drawing game!'
 ---
 
-![Pictophone](/images/pictophone-screenshot.png)
-
-**Pictophone** is a multiplayer game, much like a combination between Pictionary and Telephone, in which players alternate drawing a word or phrase, guessing what the previous player drew, and then drawing the guess from the previous player.  It's basically a copy of Telestrations, a great party game that my friends and I like to play.
+**Pictophone** is a multiplayer game, much like a combination between Pictionary and Telephone, in which players alternate drawing a word or phrase, guessing what the previous player drew, and then drawing the guess from the previous player. At the end, you see the evolution of everyone's wacky drawings and (mis)interpretations. It's basically a copy of Telestrations, a great party game that my friends and I like to play.
 
 [Play it here!](https://pictophone.now.sh)
 
