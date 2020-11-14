@@ -15,24 +15,22 @@ export function Carousel({ images }) {
   function getCarouselItems() {
     return images.map((src, idx) => (
       <div key={src} className={`carousel-item ${idx === 0 ? "active" : ""}`}>
-        <img
-          className="d-block w-100"
-          src={src}
-          // TODO: Include 'alt' message in projectData
-          alt={`Screenshot ${idx}`}
-        />
+        <a href={src}>
+          <img
+            className="d-block w-100"
+            src={src}
+            // TODO: Include 'alt' message in projectData
+            alt={`Screenshot ${idx}`}
+          />
+        </a>
       </div>
     ));
   }
 
   return (
     <div id="imageCarousel" class="carousel slide mb-3" data-ride="carousel">
-      <ol class="carousel-indicators">
-        {getCarouselIndicators()}
-      </ol>
-      <div class="carousel-inner">
-        {getCarouselItems()}
-      </div>
+      <ol class="carousel-indicators">{getCarouselIndicators()}</ol>
+      <div class="carousel-inner">{getCarouselItems()}</div>
       <a
         class="carousel-control-prev"
         href="#imageCarousel"
