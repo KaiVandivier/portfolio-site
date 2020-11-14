@@ -1,15 +1,23 @@
 ---
 title: "Custom Report Builder"
 date: "2020-11-12"
-# image: '/images/pictophone-screenshot.jpg'
+images:
+  [
+    "/images/custom-report-builder/crb-home.png",
+    "/images/custom-report-builder/crb-edit.png",
+    "/images/custom-report-builder/crb-highlighting.png",
+    "/images/custom-report-builder/crb-data-select.png",
+    # "/images/custom-report-builder/crb-org-unit-select.png",
+    # "/images/custom-report-builder/crb-period-select.png",
+    "/images/custom-report-builder/crb-parameters.png",
+    "/images/custom-report-builder/crb-generated.png",
+  ]
 description: "A DHIS web app for building custom data tables."
 ---
 
-<!-- ![Pictophone](/images/pictophone-screenshot.png) -->
-
-Screenshots coming soon!
-
 [Try a sandbox version here!](https://play.dhis2.org/2.35.0/api/apps/custom-report-builder/index.html#/tables)
+
+[View the source on GitHub](https://github.com/KaiVandivier/custom-report-builder)
 
 This is a DHIS2 app designed to provide table-building functionality with some tools that are currently unavailable to existing pivot tables, including:
 
@@ -29,5 +37,3 @@ This app is built using DHIS development tools, including:
 - Data and period selector components from the analytics library
 
 An alpha version for testing is awaiting approval on the DHIS App Hub.
-
-[View the source on GitHub](https://github.com/KaiVandivier/custom-report-builder)
