@@ -26,7 +26,11 @@ export function Carousel({ images }) {
   }
 
   return (
-    <div id="imageCarousel" class="carousel slide mb-3" data-ride="carousel">
+    <div
+      id="imageCarousel"
+      class="carousel slide shadow mb-4"
+      data-ride="carousel"
+    >
       <ol class="carousel-indicators">{getCarouselIndicators()}</ol>
       <div class="carousel-inner">{getCarouselItems()}</div>
       <a
