@@ -1,9 +1,11 @@
 ---
 title: 'Pictophone'
 date: '2020-05-01'
-# image: '/images/avocado.jpg'
+image: '/images/pictophone-screenshot.jpg'
 description: 'A multiplayer drawing game!'
 ---
+
+![Pictophone](/images/pictophone-screenshot.png)
 
 **Pictophone** is a multiplayer game, much like a combination between Pictionary and Telephone, in which players alternate drawing a word or phrase, guessing what the previous player drew, and then drawing the guess from the previous player.  It's basically a copy of Telestrations, a great party game that my friends and I like to play.
 
