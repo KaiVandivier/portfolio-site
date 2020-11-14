@@ -11,6 +11,7 @@ export function Carousel({ images }) {
         data-target="#imageCarousel"
         data-slide-to={idx}
         className={idx === 0 ? "active" : null}
+        style={{ backgroundColor: "#666" }}
       />
     ));
   }
@@ -28,29 +29,42 @@ export function Carousel({ images }) {
   return (
     <div
       id="imageCarousel"
-      class="carousel slide shadow mb-4"
+      className="carousel slide shadow mb-4"
       data-ride="carousel"
     >
-      <ol class="carousel-indicators">{getCarouselIndicators()}</ol>
-      <div class="carousel-inner">{getCarouselItems()}</div>
+      <ol className="carousel-indicators">{getCarouselIndicators()}</ol>
+      <div className="carousel-inner">{getCarouselItems()}</div>
       <a
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         href="#imageCarousel"
         role="button"
         data-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
       </a>
       <a
-        class="carousel-control-next"
+        className="carousel-control-next"
         href="#imageCarousel"
         role="button"
         data-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
       </a>
+      <style jsx>
+        {`
+          .carousel-control-next,
+          .carousel-control-prev {
+            transition: background 0.15s ease-in-out;
+          }
+
+          .carousel:hover .carousel-control-next,
+          .carousel:hover .carousel-control-prev {
+            background-color: rgba(0, 0, 0, 0.15);
+          }
+        `}
+      </style>
     </div>
   );
 }
