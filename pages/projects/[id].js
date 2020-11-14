@@ -3,6 +3,7 @@ import { getAllMdIds, getMdData } from "../../lib/markdown";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
+import Carousel from "../../components/carousel";
 
 export default function Project({ projectData }) {
   return (
@@ -11,11 +12,15 @@ export default function Project({ projectData }) {
         <title>{projectData.title}</title>
       </Head>
       <article>
+        {projectData.images && <Carousel images={projectData.images} />}
         <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={projectData.date} />
         </div>
-        <div className={utilStyles.articleBody} dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+        <div
+          className={utilStyles.articleBody}
+          dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
+        />
       </article>
     </Layout>
   );
