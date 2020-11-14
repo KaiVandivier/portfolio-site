@@ -14,9 +14,9 @@ export default function Project({ projectData }) {
       <article>
         {projectData.images && <Carousel images={projectData.images} />}
         <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <p className={utilStyles.lightText}>
           <Date dateString={projectData.date} />
-        </div>
+        </p>
         <div
           className={utilStyles.articleBody}
           dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
