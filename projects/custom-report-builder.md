@@ -32,7 +32,7 @@ This app is built using DHIS development tools, including:
 
 - The app runtime data layer
 - The app service datastore
-- Complex form validation using final form
+- Complex form validation using Final Form
 - Extensive use of the UI libraries
 - Data and period selector components from the analytics library
 
