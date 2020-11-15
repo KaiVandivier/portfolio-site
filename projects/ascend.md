@@ -1,13 +1,19 @@
 ---
-title: 'KIT Reports'
+title: 'KIT & ASCEND Reports'
 date: '2020-10-01'
-# images: []
+images: [
+  '/images/ascend/mda.png',
+  '/images/ascend/mda-filters.png',
+  '/images/ascend/dsa.png',
+  '/images/ascend/training.png',
+  '/images/ascend/lf-tc.png',
+]
 description: 'Multi-featured HTML-based reports for DHIS2.'
 ---
 
-[View the source on GitHub](https://github.com/KaiVandivier/ascend-reports)
+<em>**NOTE:** The screenshots above were taken while the database was not yet populated. These screenshots will be updated when data becomes available.</em>
 
-Screenshots coming soon!
+[View the source on GitHub](https://github.com/KaiVandivier/ascend-reports)
 
 These are a group of reports for the KIT and ASCEND organisations which are designed to display analytics data which required custom handling and several dynamic features.
 
