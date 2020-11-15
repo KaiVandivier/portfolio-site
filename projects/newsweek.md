@@ -12,3 +12,5 @@ This page is a copy of several sections of the Newsweek home page, intended as a
 [Take a look here!](https://kaivandivier.github.io/responsive-bootstrap-newsweek)
 
 Note that the images are randomly drawn from [unsplash](https://source.unsplash.com/), not the original images from Newsweek.
+
+[View the source at GitHub](https://github.com/KaiVandivier/responsive-bootstrap-newsweek)
