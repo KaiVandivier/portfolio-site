@@ -17,7 +17,7 @@ description: 'Multi-featured HTML-based reports for DHIS2.'
 
 These are a group of reports for the KIT and ASCEND organisations which are designed to display analytics data which require custom handling and several dynamic features.
 
-Each cell requires a different data item to be queried from the DHIS analytics API, and some require custom logic, for example to be the greater of two other cells. Other cells require complex analytics queries and processing, for example to sum an indicator value across multiple programs, but only count one value from each of the smallest levels of organization units across all the programs (i.e. if an area responded with values to multiple different programs, only the largest of those responses from that area is counted toward the national or global sum).
+Each cell requires a different data item to be queried from the DHIS2 analytics API, and some require custom logic, for example to be the greater of two other cells. Other cells require complex analytics queries and processing, for example to sum an indicator value across multiple programs, but only count one value from each of the smallest levels of organization units across all the programs (i.e. if an area responded with values to multiple different programs, only the largest of those responses from that area is counted toward the national or global sum).
 
 The reports also feature:
 - A tool for choosing the years and countries for which the table data is queried, then refreshing the table (which was necessary at the time when report parameters in the reports app were not working correctly)

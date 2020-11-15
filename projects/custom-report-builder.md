@@ -12,7 +12,7 @@ images:
     "/images/custom-report-builder/crb-parameters.png",
     "/images/custom-report-builder/crb-generated.png",
   ]
-description: "A DHIS web app for building custom data tables."
+description: "A DHIS2 web app for building custom data tables."
 ---
 
 [Try a sandbox version here!](https://play.dhis2.org/2.35.0/api/apps/custom-report-builder/index.html#/tables)
@@ -28,7 +28,7 @@ This is a DHIS2 app designed to provide table-building functionality with some t
 
 Read the Instructions for Use [on this page](https://github.com/KaiVandivier/custom-report-builder/blob/master/docs/tables.md).
 
-This app is built using DHIS development tools, including:
+This app is built using DHIS2 development tools, including:
 
 - The app runtime data layer
 - The app service datastore
@@ -36,4 +36,4 @@ This app is built using DHIS development tools, including:
 - Extensive use of the UI libraries
 - Data and period selector components from the analytics library
 
-An alpha version for testing is awaiting approval on the DHIS App Hub.
+An alpha version for testing is awaiting approval on the DHIS2 App Hub.
