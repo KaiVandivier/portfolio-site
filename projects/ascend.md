@@ -4,14 +4,13 @@ date: '2020-10-01'
 images: [
   '/images/ascend/mda.png',
   '/images/ascend/mda-filters.png',
-  '/images/ascend/dsa.png',
-  '/images/ascend/training.png',
-  '/images/ascend/lf-tc.png',
+  '/images/ascend/mda-tooltip.png',
+  # '/images/ascend/dsa.png',
+  # '/images/ascend/training.png',
+  # '/images/ascend/lf-tc.png',
 ]
 description: 'Multi-featured HTML-based reports for DHIS2.'
 ---
-
-<em>**NOTE:** The screenshots above were taken while the database was not yet populated. These screenshots will be updated when data becomes available.</em>
 
 [View the source on GitHub](https://github.com/KaiVandivier/ascend-reports)
 
